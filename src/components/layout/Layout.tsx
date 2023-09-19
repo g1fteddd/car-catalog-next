@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "./header/Header";
 
 const Layout: React.FC<React.PropsWithChildren<unknown>> = ({ children }) => {
-  return (
-    <div>{children}</div>
-  )
-}
+    return (
+        <div>
+            <Header />
+            <main>{children}</main>
+        </div>
+    );
+};
 
-export default Layout
+export default Layout;
